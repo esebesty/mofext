@@ -1,0 +1,22 @@
+Files:
+
+INSTALL			Installation instruction
+AUTHOR			Some information about the author
+COPYING			Licence file
+src/			Source code
+	Makefile		
+	extend.c
+	extend.h
+	getline.c
+	getline.h
+	matrix.c
+	matrix.h
+	mofext.c
+	mystrings.c
+	mystrings.h
+	similar.c
+	similar.h
+data/
+	ch-13-500.list	DoOP chordata motif list (version 1.3)
+	default		Matrix file
+

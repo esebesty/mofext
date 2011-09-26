@@ -1,0 +1,50 @@
+**** MofExt v1.0.3 ****
+
+Motif search and Extract tool. This program finds motifs in a given database.
+
+Usage: mofext -d mypatterns1.list mypatterns2.list -q GGATCC TTGANTGA -m matrix -w 10 -c 0.95
+
+Options:
+~~~~~~~~
+-h     Display full help.
+-d     Databases to search. Space separated, maximum 50.
+-q     Query patterns. Space separated, maximum 50.
+-m     The similarity matrix.
+-w     Wordsize. Default: 6.
+-c     The similarity percentage limit (cutoff). Default: 0.8.
+-o     Output format. See below.
+Example:
+mofext -d mypatterns1.list mypatterns2.list -q GGATCC TTGANTGA -m matrix -w 4 -c 0.5
+
+Matrix:
+~~~~~~~
+ The matrix used by mofext is a plain text file. Each row ends with a newline character.
+ Columns are separated by one or more spaces. The matrix is quadratic, so A[j,i] = A[i,j].
+ The number in the upper left corner denotes the matrix size. See default matrix included
+ in the source.
+
+Motif list:
+~~~~~~~~~~~
+ The motif list file used by mofext is a plain text file. Each row ends with a newline character.
+ The motif list file must have at least 2 columns, separated by spaces or tabs. The first column
+ is a UNIQUE motif id. It can contain any characters except space, newline or tab. The second
+ column is the sequence (pattern) of the motif. The available characters are the ones defined in
+ the matrix file. Additional columns are ignored by the program.
+
+Output:
+~~~~~~~
+ The -o option sets the output format of the program. The following characters represent an output
+ element. The default is ieqd.
+ i: ID column.
+ s: Score.
+ e: Extended score.
+ p: Probability value.
+ d: Hit subsequence.
+ D: Full hit sequence.
+ q: Query subsequence.
+ Q: Full query sequence.
+ F: The position of the first base of the hit subsequence in the full hit sequence.
+ f: The position of the first base of the query subsequence in the full query sequence.
+ %: The similarity percent score of the hit/query subsequence pair.
+ Example: mofext -d mypatterns1.list -q GGATCC -m matrix -o ied
+ The program prints out the ID, extended score and the hit subsequence.

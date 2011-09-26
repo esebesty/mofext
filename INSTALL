@@ -1,0 +1,19 @@
+To install mofext follow these steps:
+
+tar xfz mofext.tar.gz
+cd mofext-x.x.x/src
+make
+
+With root privilegs you can copy the binary to 
+
+/usr/local/bin 
+
+or 
+
+/usr/bin
+
+To remove the object files type:
+
+make clean
+
+Good luck!
