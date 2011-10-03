@@ -1,6 +1,6 @@
-**** MofExt v1.0.3 ****
+**** MOFEXT v1.0.3 ****
 
-Motif search and Extract tool. This program finds motifs in a given database.
+MOtiF search and EXTraction tool. The program finds short sequence motifs in a motif database.
 
 Usage: mofext -d mypatterns1.list mypatterns2.list -q GGATCC TTGANTGA -m matrix -w 10 -c 0.95
 
@@ -13,7 +13,9 @@ Options:
 -w     Wordsize. Default: 6.
 -c     The similarity percentage limit (cutoff). Default: 0.8.
 -o     Output format. See below.
+
 Example:
+
 mofext -d mypatterns1.list mypatterns2.list -q GGATCC TTGANTGA -m matrix -w 4 -c 0.5
 
 Matrix:
