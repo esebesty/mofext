@@ -1,7 +1,7 @@
 Files:
 
-INSTALL			Installation instruction
-AUTHOR			Some information about the author
+INSTALL			Installation instructions
+AUTHOR			Some information about the authors
 COPYING			Licence file
 src/			Source code
 	Makefile		
@@ -17,6 +17,6 @@ src/			Source code
 	similar.c
 	similar.h
 data/
-	ch-13-500.list	DoOP chordata motif list (version 1.3)
+	ch-13-500.list	DoOP chordate motif list (version 1.3)
 	default		Matrix file
 
