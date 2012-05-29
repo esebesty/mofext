@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS  = -pedantic -Wall -W -O2 -march=native -g -pipe
+CFLAGS  = -pedantic -Wall -W -O2
 COMP    = $(CC) $(CFLAGS)
 
 mofext: mofext.o matrix.o mystrings.o extend.o similar.o getline.o
